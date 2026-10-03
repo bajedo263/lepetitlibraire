@@ -1,21 +1,5 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Le Petit Libraire · Livres à remplir pour Papi, Maman et toute la famille</title>
-<meta name="description" content="Des livres à remplir pour que vos parents et grands-parents racontent leur vie : souvenirs, astuces, fous rires. « Papi, à toi la parole ! » et « Maman, raconte-moi ton histoire », à offrir et à commander sur Amazon.">
-<meta name="theme-color" content="#1E3A2F">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="fr_FR">
-<meta property="og:site_name" content="Le Petit Libraire">
-<meta property="og:title" content="Le Petit Libraire · Leur histoire, écrite de leur main">
-<meta property="og:description" content="Des livres à remplir pour que vos parents et grands-parents racontent leur vie : souvenirs, astuces, fous rires. « Papi, à toi la parole ! » et « Maman, raconte-moi ton histoire », à offrir et à commander sur Amazon.">
-<!-- Image d'aperçu sur les réseaux sociaux (facultatif) : adresse complète d'une image 1200 × 630
-<meta property="og:image" content="https://www.votre-site.fr/partage.jpg">
--->
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='23' fill='%231E3A2F'/%3E%3Ccircle cx='24' cy='24' r='19' fill='none' stroke='%23D9A441' stroke-width='1.5'/%3E%3Cpath d='M13 17.6c3.6-1.3 7.3-1 11 1.2v13.6c-3.7-2.2-7.4-2.5-11-1.2zM35 17.6c-3.6-1.3-7.3-1-11 1.2v13.6c3.7-2.2 7.4-2.5 11-1.2z' fill='none' stroke='%23D9A441' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E">
-
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Le Petit Libraire</title>
 <script>
 /* ==========================================================================
    LE PETIT LIBRAIRE : ZONE À MODIFIER
@@ -36,6 +20,15 @@
       Copiez un bloc { ... } complet, collez-le après le dernier (séparé par
       une virgule) et modifiez son contenu. Chaque "id" doit être unique.
       L'ordre des blocs est l'ordre d'affichage sur le site.
+
+   4. OPTION « motChapitre »
+      Remplace le mot « Chapitre » dans le sommaire et les extraits
+      (le livre Papa utilise "Piste", Frérot "Niveau", Sœurette "Rubrique",
+      Belle-Maman "Étape").
+
+   5. OPTION « vitrine »
+      Choisit les livres de la vitrine 3D en haut du site (1 = au premier
+      plan, puis 2, 3). Sans cette option, les trois premiers livres.
 
    Règles d'or : gardez les guillemets "..." autour des textes et la virgule
    en fin de ligne. Enregistrez le fichier, puis rechargez la page.
@@ -75,7 +68,7 @@ window.SITE = {
       ],
       caracteristiques: ["116 pages", "15,2 × 22,9 cm", "Papier blanc", "Lignes espacées de 9 mm", "Couverture mate"],
 
-      // Fêtes proposées dans le calendrier : "meres", "peres", "grands-meres", "grands-peres", "noel"
+      // Fêtes proposées dans le calendrier : "meres", "peres", "grands-meres", "grands-peres", "freres-soeurs", "noel"
       occasions: ["grands-peres", "noel", "peres"],
 
       // Couverture dessinée, utilisée tant que "couverture" est vide
@@ -143,6 +136,416 @@ window.SITE = {
     },
 
     {
+      id: "mamie",
+      pour: "Mamie",
+      titre: "Avant d'être Mamie",
+      sousTitre: "Ta jeunesse, tes amours, tes recettes, tes secrets : le livre à remplir pour que tes petits-enfants te connaissent vraiment",
+      auteur: "Adèle Mercier",
+      nouveaute: false,
+
+      lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
+      lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
+      prix: "",              // facultatif, ex. "11,99 €"
+      couverture: "",        // conseillé, ex. "mamie-couverture.png" (1re de couverture 1800 × 2700 déjà fournie)
+      vitrine: 0,            // place dans la vitrine 3D
+
+      motDuLibraire: "Le livre qui révèle la femme derrière la grand-mère.",
+      description: "Ses bals, sa première paie en francs, ses amours, la recette que tout le monde réclame… Avant d'être Mamie, elle a eu vingt ans, elle aussi. Ce livre l'invite à raconter la jeune femme qu'elle était, et plusieurs pages se remplissent en famille.",
+      points: [
+        "116 questions et activités en 11 chapitres, de son enfance à ce que la vie lui a appris",
+        "« Jeune fille à mon époque » : ses premières libertés, ses bals, ce qui était interdit… et qu'elle a fait quand même",
+        "« Le carnet de Mamie » : 3 fiches recettes, les mesures de Mamie enfin traduites, les rituels de la maison",
+        "Des jeux en famille, des encadrés « Et toi ? » et six lettres « À lire le jour où… »"
+      ],
+      caracteristiques: ["116 pages", "15,2 × 22,9 cm", "Papier blanc", "Lignes espacées de 9 mm", "Couverture mate"],
+
+      occasions: ["grands-meres", "noel", "meres"],
+
+      couleurs: { fond: "#8E1F45", titre: "#E2BE73", texte: "#F8EEE9" },
+      sceau: "Jeunesse · Amours · Recettes",
+      pastille: "116 questions",
+
+      sommaire: [
+        ["La petite fille que j'étais", 11],
+        ["L'école, les copines et les premiers rêves", 19],
+        ["Jeune fille à mon époque", 27],
+        ["Mes vingt ans, mon envol", 37],
+        ["Les histoires de cœur", 45],
+        ["Mon travail, ma fierté", 53],
+        ["Maman, puis Mamie", 61],
+        ["Le carnet de Mamie", 69],
+        ["Mes plaisirs, mon style, mes voyages", 79],
+        ["Pour rire en famille", 87],
+        ["Ce que je sais maintenant", 95]
+      ],
+
+      extraits: [
+        { n: 2,   ch: 1,  q: "Ton prénom : qui l'a choisi, et pourquoi ? Et tes surnoms d'enfance ?" },
+        { n: 5,   ch: 1,  q: "Ta cachette, ton coin secret, ton trésor caché." },
+        { n: 11,  ch: 1,  q: "La bêtise que tes parents n'ont jamais sue (il y a prescription !)." },
+        { n: 16,  ch: 2,  q: "La récitation, la poésie ou la chanson que tu sais encore par cœur." },
+        { n: 21,  ch: 2,  q: "Ce que tes parents voulaient pour toi… et ce que toi, tu voulais vraiment." },
+        { n: 26,  ch: 3,  q: "C'était interdit… et tu l'as fait quand même." },
+        { n: 30,  ch: 3,  q: "La chanson qui te ramène immédiatement à tes dix-huit ans… et pourquoi." },
+        { n: 35,  ch: 3,  q: "Qu'y avait-il dans ton sac à main, à vingt ans ?" },
+        { n: 39,  ch: 4,  q: "Ta toute première paie." },
+        { n: 42,  ch: 4,  q: "Un choix que tu as fait toute seule, contre l'avis de tous." },
+        { n: 48,  ch: 5,  q: "Comment flirtait-on à ton époque ?" },
+        { n: 50,  ch: 5,  q: "Ta première impression… en toute sincérité." },
+        { n: 60,  ch: 6,  q: "Être une femme au travail, à ton époque." },
+        { n: 66,  ch: 6,  q: "Le travail que personne ne voyait… mais que tu faisais quand même." },
+        { n: 73,  ch: 7,  q: "Le jour où tu es devenue Mamie." },
+        { n: 84,  ch: 8,  q: "Les mesures de Mamie : un verre à moutarde, c'est combien ?" },
+        { n: 87,  ch: 8,  q: "Ce qu'on trouve toujours chez Mamie." },
+        { n: 93,  ch: 9,  q: "Ton style, ta signature." },
+        { n: 101, ch: 10, q: "Les phrases de Mamie." },
+        { n: 103, ch: 10, q: "Et si tu avais eu un smartphone à vingt ans ?" },
+        { n: 111, ch: 11, q: "L'ordonnance de Mamie." },
+        { n: 114, ch: 11, q: "Lettre à la jeune fille que j'étais." }
+      ],
+
+      pageExemple: [
+        { n: 35, ch: 3, q: "Qu'y avait-il dans ton sac à main, à vingt ans ?",
+          reponse: ["Un rouge à lèvres carmin,", "un ticket de bus, la photo", "de Jean-Claude et dix francs", "pour le bal du samedi."] },
+        { n: 84, ch: 8, q: "Les mesures de Mamie",
+          reponse: ["Un verre à moutarde de", "farine = 150 g. Une noix", "de beurre = 15 g. Un bon", "feu = thermostat 7 !"] },
+        { n: 26, ch: 3, q: "C'était interdit… et tu l'as fait quand même",
+          reponse: ["Le bal de la Saint-Jean,", "en 1962. Je suis passée", "par la fenêtre de la cuisine.", "Mon père n'a jamais su !"] }
+      ]
+    },
+
+    {
+      id: "papa",
+      pour: "Papa",
+      titre: "Papa, face B",
+      sousTitre: "Tes années d'avant, tes coulisses de père, ta version de nos histoires : le livre à remplir pour qu'on te connaisse enfin",
+      auteur: "Adèle Mercier",
+      nouveaute: true,
+
+      lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
+      lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
+      prix: "",              // facultatif, ex. "11,99 €"
+      couverture: "papa-couverture.jpg", // image fournie : à placer à côté de ce fichier
+      vitrine: 0,            // place dans la vitrine 3D
+
+      motChapitre: "Piste",  // facultatif : remplace le mot « Chapitre » (ici, les chapitres sont des pistes de cassette)
+      motDuLibraire: "Tu connais la face A de ton père. Voici la face B.",
+      description: "La face A de ton père, tu la connais par cœur : celui qui conduit, qui répare et qui dit « on verra » quand il pense non. Ce livre fait parler sa face B : le gamin qu'il a été, l'ado aux posters, ses vingt ans… et toutes les coulisses de sa vie de père, jusqu'à sa version de vos légendes de famille.",
+      points: [
+        "131 questions et activités en 11 pistes, comme sur une cassette",
+        "« Les coulisses » : ce qu'il pensait vraiment pendant que vous grandissiez",
+        "« Ta version des faits » : 9 légendes de famille racontées à deux voix, avec verdict",
+        "Le dictionnaire Papa → français, le procès de Papa, sa mixtape et une lettre « Ce que je ne t'ai jamais dit »"
+      ],
+      caracteristiques: ["116 pages", "15,2 × 22,9 cm", "Papier blanc", "Lignes espacées de 9 mm", "Couverture mate"],
+
+      occasions: ["peres", "noel"],
+
+      couleurs: { fond: "#1F2A45", titre: "#F6B62A", texte: "#F7F0E0" },
+      sceau: "Face B · Inédits · Coulisses",
+      pastille: "131 questions",
+
+      sommaire: [
+        ["Le petit gars que j'étais", 11],
+        ["L'ado qu'on n'a pas connu", 19],
+        ["Mes vingt ans, sans filet", 27],
+        ["Notre histoire", 35],
+        ["Le boulot, les galères, les fiertés", 43],
+        ["Et puis tu es arrivé(e)", 51],
+        ["Les coulisses", 59],
+        ["Ta version des faits", 69],
+        ["Papa au volant", 79],
+        ["Le grand show de Papa", 87],
+        ["Ce que je voudrais te passer", 95],
+        ["Pistes cachées", 103]
+      ],
+
+      extraits: [
+        { n: 1,   ch: 1,  q: "Que t'a-t-on raconté du jour de ta naissance ? Et qu'as-tu toujours soupçonné qu'on ne t'avait pas dit ?" },
+        { n: 4,   ch: 1,  q: "Ton père et toi : ce que tu as pris de lui… et ce que tu t'étais juré de faire autrement le jour où tu serais papa." },
+        { n: 12,  ch: 1,  q: "Ta plus belle bêtise. Il y a prescription, promis." },
+        { n: 17,  ch: 2,  q: "Quel élève étais-tu vraiment ? (Et quelle version nous en as-tu donnée ?)" },
+        { n: 23,  ch: 2,  q: "Le mensonge à tes parents dont tu es encore (un peu) fier." },
+        { n: 25,  ch: 2,  q: "La musique de ton adolescence : la chanson, l'album ou le groupe, et le souvenir qui va avec." },
+        { n: 32,  ch: 3,  q: "Ta première voiture : le modèle, la couleur, le prix, et sa pire panne." },
+        { n: 41,  ch: 4,  q: "Ta phrase d'approche. La version officielle… puis la vraie." },
+        { n: 52,  ch: 5,  q: "Explique ton métier comme à un enfant de six ans." },
+        { n: 55,  ch: 5,  q: "Ton pire jour au travail… et comment tu l'as caché en rentrant à la maison." },
+        { n: 63,  ch: 6,  q: "Les prénoms qu'on a failli porter. (Et qui a gagné le débat.)" },
+        { n: 67,  ch: 6,  q: "La première chose que tu as ratée : couche, biberon, siège auto, bain… raconte." },
+        { n: 73,  ch: 7,  q: "Ce que tu pensais vraiment de mon premier amour." },
+        { n: 75,  ch: 7,  q: "Le mensonge pieux que tu nous as fait : le Père Noël, le hamster « parti à la campagne »…" },
+        { n: 77,  ch: 7,  q: "La fois où tu as fait semblant de savoir… sans avoir la moindre idée de la réponse." },
+        { n: 85,  ch: 7,  q: "La phrase de ton propre père qui t'est sortie de la bouche un jour… et qui t'a fait peur." },
+        { n: 94,  ch: 8,  q: "Pourquoi on a eu (ou pas eu) un animal à la maison : ma version, puis la tienne." },
+        { n: 102, ch: 9,  q: "Ton raccourci « infaillible »… qui ne l'était pas du tout." },
+        { n: 100, ch: 9,  q: "La cassette (ou la playlist) de la route des vacances." },
+        { n: 109, ch: 10, q: "Petit dictionnaire Papa → français : « On verra » veut dire…" },
+        { n: 111, ch: 10, q: "Les fausses vérités de Papa : ce que tu nous as fait croire. C'est le moment d'avouer." },
+        { n: 117, ch: 11, q: "Ton meilleur conseil pour un cœur brisé." },
+        { n: 121, ch: 11, q: "Ce que tu sais maintenant et que tu aurais aimé savoir à vingt ans." },
+        { n: 127, ch: 12, q: "La mixtape de Papa : les dix chansons d'avant nous, et les dix qu'on a écoutées ensemble." }
+      ],
+
+      pageExemple: [
+        { n: 109, ch: 10, q: "Petit dictionnaire Papa → français",
+          reponse: ["« On verra » = non.", "« Je connais un raccourci »", "= on va se perdre.", "« Je ne dors pas » = je dors."] },
+        { n: 73, ch: 7, q: "Ce que tu pensais vraiment de mon look d'ado",
+          reponse: ["Les cheveux bleus en 2009 ?", "J'ai dit « ça te va bien ».", "En vrai, il m'a fallu", "une semaine pour m'en remettre."] },
+        { n: 102, ch: 9, q: "Ton raccourci « infaillible »… qui ne l'était pas du tout",
+          reponse: ["Août 1998, vers Biarritz.", "Trois heures dans les Landes,", "sans carte. Ta mère", "en parle encore !"] }
+      ]
+    },
+
+    {
+      id: "frere",
+      pour: "ton frère",
+      titre: "Frérot, mode coop",
+      sousTitre: "Notre enfance en niveaux, nos vieux comptes à régler et tout ce que je ne sais pas encore de toi : le livre à remplir à deux",
+      auteur: "Adèle Mercier",
+      nouveaute: true,
+      vitrine: 3,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
+
+      lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
+      lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
+      prix: "",              // facultatif, ex. "11,99 €"
+      couverture: "frere-couverture.jpg", // image fournie : à placer à côté de ce fichier
+
+      motChapitre: "Niveau", // ici, les chapitres sont des niveaux de jeu vidéo
+      motDuLibraire: "Tu connais ton frère depuis toujours. Mais tu le connais vraiment ?",
+      description: "Vous avez partagé une maison, une console, des parents et quelques milliers de disputes. Ce livre se joue à deux, comme un jeu vidéo en mode coopératif : avant de l'offrir, tu écris tes pronostics ; il répond ; vous comptez les points. Entre deux fous rires, il y a même un niveau sans blague, pour se dire enfin les choses.",
+      points: [
+        "128 questions, défis et activités en 11 niveaux, de la chambre partagée à sa vie d'aujourd'hui",
+        "71 points en jeu : des pronostics à écrire avant d'offrir et un grand duel en 5 rounds",
+        "Les pages cultes : formulaire de réclamation officiel, inventaire des cicatrices, classement de la fratrie",
+        "« Sans les manettes », une promesse signée, 10 quêtes à vivre ensemble et 18 succès à débloquer"
+      ],
+      caracteristiques: ["116 pages", "15,2 × 22,9 cm", "Papier blanc", "Lignes espacées de 9 mm", "Couverture mate"],
+
+      occasions: ["freres-soeurs", "noel"],
+
+      couleurs: { fond: "#472D7B", titre: "#C7E32E", texte: "#FEF6DD" },
+      sceau: "Souvenirs · Défis · Pronostics",
+      pastille: "128 questions",
+
+      sommaire: [
+        ["La maison de départ", 11],
+        ["Choisis ta route", 19],
+        ["Pendant que je te croyais dans ta chambre", 27],
+        ["Mode versus", 35],
+        ["Mode alliance", 43],
+        ["Les boss de fin : nos parents", 51],
+        ["Hors de l'écran", 59],
+        ["Monde ouvert", 67],
+        ["Le grand duel", 75],
+        ["Sans les manettes", 83],
+        ["Coop pour la vie", 91],
+        ["Niveaux secrets", 99]
+      ],
+
+      extraits: [
+        { n: 1,   ch: 1,  q: "Ton tout premier souvenir de moi." },
+        { n: 7,   ch: 1,  q: "La banquette arrière : ta place attitrée, l'objet qui marquait la frontière, la phrase qui déclenchait tout." },
+        { n: 8,   ch: 1,  q: "Le surnom que tu me donnais… et celui que tu m'interdisais de te donner." },
+        { n: 9,   ch: 1,  q: "Une bêtise faite ensemble dont les parents ne connaissent toujours pas la vérité." },
+        { n: 14,  ch: 2,  q: "Les injustices de ta place dans la fratrie. Liste complète, avec les dates si possible." },
+        { n: 20,  ch: 2,  q: "La chose que tu m'enviais quand on était petits." },
+        { n: 26,  ch: 3,  q: "Ton premier amour. Je n'en savais rien, ou presque : raconte. (J'ai écrit mon pronostic.)" },
+        { n: 27,  ch: 3,  q: "Ce que tu pensais vraiment quand je débarquais dans ta chambre sans frapper." },
+        { n: 30,  ch: 3,  q: "La fois où je t'ai « balancé » aux parents : ta version de l'affaire." },
+        { n: 37,  ch: 4,  q: "Le grand mystère jamais élucidé : qui a commencé ?" },
+        { n: 38,  ch: 4,  q: "Formulaire de réclamation officiel. Destinataire : Service des injustices parentales." },
+        { n: 39,  ch: 4,  q: "L'inventaire des cicatrices : où, l'arme du crime, le coupable, la version racontée aux parents." },
+        { n: 42,  ch: 4,  q: "L'emprunt que tu réclames encore aujourd'hui." },
+        { n: 47,  ch: 5,  q: "Le jour où je t'ai défendu sans que tu le saches." },
+        { n: 51,  ch: 5,  q: "Opération secrète : le complot contre les parents. Nom de code, objectif, résultat." },
+        { n: 59,  ch: 6,  q: "Le chouchou : enfin la vérité. Toi, moi, ou l'animal de la maison ?" },
+        { n: 61,  ch: 6,  q: "La phrase de nos parents que tu répètes aujourd'hui malgré toi." },
+        { n: 75,  ch: 7,  q: "Ce que tu m'as caché à cette époque, et que tu peux enfin m'avouer." },
+        { n: 80,  ch: 8,  q: "Ton métier, expliqué comme un tutoriel : l'objectif, les commandes de base, le boss du niveau." },
+        { n: 86,  ch: 8,  q: "Ton inventaire : les neuf objets que tu emportes partout." },
+        { n: 91,  ch: 9,  q: "Round 1 : ton plat préféré, ta chanson sous la douche, ton super-pouvoir rêvé… J'ai écrit mes pronostics." },
+        { n: 102, ch: 10, q: "Ce que tu me pardonnes, et ce que tu aimerais que je te pardonne." },
+        { n: 106, ch: 10, q: "Si tu avais été enfant unique, qu'est-ce qui t'aurait manqué ?" },
+        { n: 114, ch: 11, q: "Quand on sera vieux : où on vivra, qui sera le plus grincheux, notre activité du mardi." }
+      ],
+
+      pageExemple: [
+        { n: 26, ch: 3, q: "Ton premier amour. Je n'en savais rien, ou presque : raconte.",
+          reponse: ["Pronostic : Inès ? +1 !", "Comment tu sais ça ?!", "Inès, en 4e B. On s'écrivait", "des mots codés dans l'agenda."] },
+        { n: 37, ch: 4, q: "Le grand mystère jamais élucidé : qui a commencé ?",
+          reponse: ["Ma version : lui.", "Sa version : moi.", "La vérité : le chat.", "Affaire classée."] },
+        { n: 38, ch: 4, q: "Le formulaire de réclamation officiel",
+          reponse: ["Objet : la place devant.", "Dix étés coincé à l'arrière", "entre glacière et chien.", "Les parents : accordé !"] }
+      ]
+    },
+
+    {
+      id: "soeur",
+      pour: "ta sœur",
+      titre: "Sœurette, le numéro spécial",
+      sousTitre: "Interview exclusive, tests, potins et confidences : le magazine de sa vie, à remplir à deux",
+      auteur: "Adèle Mercier",
+      nouveaute: true,
+      vitrine: 2,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
+
+      lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
+      lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
+      prix: "",              // facultatif, ex. "11,99 €"
+      couverture: "soeur-couverture.jpg", // image fournie : à placer à côté de ce fichier
+
+      motChapitre: "Rubrique", // ici, les chapitres sont des rubriques de magazine
+      motDuLibraire: "Elle a lu ton journal intime. À ton tour de lire le sien.",
+      description: "Vous avez partagé une salle de bains, des secrets chuchotés d'un lit à l'autre et quelques pulls jamais rendus. Ce livre se remplit comme un vrai magazine dont elle est la star : tu es la rédaction, tu écris l'édito et tu poses les questions ; elle répond. Interview exclusive, courrier du cœur, potins, tests tête en bas et pages scellées, jusqu'à la rubrique « Sans filtre ».",
+      points: [
+        "154 questions et activités en 11 rubriques de magazine, de l'interview exclusive à l'horoscope",
+        "5 tests de magazine aux résultats imprimés tête en bas, et un grand test à deux : « Sœurs miroir ? »",
+        "4 pages scellées : un secret écrit dans le coin, plié, fermé jusqu'à la date choisie",
+        "Les pages cultes : dressing partagé, affaires non élucidées, petites annonces, poster géant, abonnement à vie"
+      ],
+      caracteristiques: ["116 pages", "15,2 × 22,9 cm", "Papier blanc", "Lignes espacées de 9 mm", "Couverture mate"],
+
+      occasions: ["freres-soeurs", "noel"],
+
+      couleurs: { fond: "#2342D1", titre: "#FFD952", texte: "#FEF6E6" },
+      sceau: "Interview · Tests · Confidences",
+      pastille: "154 questions",
+
+      sommaire: [
+        ["Interview exclusive : les débuts de la star", 11],
+        ["Reportage : la maison de notre enfance", 19],
+        ["Courrier du cœur", 27],
+        ["Mode & beauté : le dressing partagé", 35],
+        ["Potins & révélations", 43],
+        ["Enquête : nos parents, ces inconnus", 51],
+        ["Success story : le parcours de la star", 59],
+        ["Psycho : qui es-tu vraiment ?", 67],
+        ["Le grand test : sœurs miroir ?", 75],
+        ["Sans filtre", 83],
+        ["Horoscope : nos prédictions", 91],
+        ["Supplément : les pages à garder", 99]
+      ],
+
+      extraits: [
+        { n: 1,   ch: 1,  q: "Ton tout premier souvenir. Le vrai, pas celui des photos." },
+        { n: 7,   ch: 1,  q: "La bêtise que les parents n'ont jamais sue. Il y a prescription." },
+        { n: 9,   ch: 1,  q: "Nos spectacles de salon : le meilleur numéro qu'on ait monté pour les parents." },
+        { n: 16,  ch: 2,  q: "La salle de bains, 7 h 42 : qui y passait combien de temps, et l'excuse officielle." },
+        { n: 17,  ch: 2,  q: "J'avoue : ce que j'ai fait dans ta chambre quand tu n'étais pas là. (Écrit par celui ou celle qui offre.)" },
+        { n: 20,  ch: 2,  q: "Ton journal intime : en as-tu tenu un ? Et sais-tu qui l'a lu ?" },
+        { n: 27,  ch: 2,  q: "La nuit où l'on a parlé jusqu'à pas d'heure, chacune dans son lit : de quoi parlait-on ?" },
+        { n: 31,  ch: 3,  q: "Le premier baiser : où, quand, avec qui… et ta note sur 10, avec le recul." },
+        { n: 33,  ch: 3,  q: "« Chère Sœurette, ma petite sœur lit mon journal intime en cachette. Que faire ? » Réponds comme une experte du courrier du cœur." },
+        { n: 39,  ch: 3,  q: "Le prénom que tu n'as jamais avoué. Dans le coin de la page, plié, scellé." },
+        { n: 41,  ch: 4,  q: "L'inventaire du dressing partagé : le vêtement, emprunté par qui, en quelle année, rendu ou pas." },
+        { n: 42,  ch: 4,  q: "Le défilé des coupes : dessine tes coiffures, de 6 ans à aujourd'hui, et donne un nom à chacune." },
+        { n: 44,  ch: 4,  q: "Le look que tu aimerais effacer de tous les albums de famille." },
+        { n: 53,  ch: 5,  q: "Le dossier des affaires non élucidées : le vase du salon, la rayure sur la voiture… La version officielle, puis la vérité." },
+        { n: 58,  ch: 5,  q: "Ta plus grande honte en public. On a le droit de rire, c'est prescrit." },
+        { n: 63,  ch: 6,  q: "Sondage exclusif : qui était le préféré ? Colorie le camembert de la vérité." },
+        { n: 72,  ch: 6,  q: "Le casting des repas de famille : qui arrive en retard, qui fait un discours, qui repart avec les restes." },
+        { n: 85,  ch: 7,  q: "La décision que tout le monde t'a déconseillée… et que tu as prise quand même." },
+        { n: 91,  ch: 8,  q: "Le portrait chinois : si tu étais une ville, un plat, une chanson… Selon toi, puis selon la rédac'." },
+        { n: 104, ch: 9,  q: "Café ou thé ? Mer ou montagne ? Chacune répond pour elle-même : on compte les réponses identiques." },
+        { n: 118, ch: 10, q: "Les mots que tu aurais aimé entendre de ma part, et que je ne dis peut-être pas assez." },
+        { n: 123, ch: 10, q: "Notre mot de code SOS : quand l'une de nous l'envoie, l'autre appelle, sans poser de question." },
+        { n: 133, ch: 11, q: "Quand on sera deux vieilles dames : où l'on vivra, laquelle sera la plus coquette, laquelle la plus râleuse." },
+        { n: 145, ch: 12, q: "Les petites annonces de la fratrie : recherche, échange, objets perdus, déclarations." }
+      ],
+
+      pageExemple: [
+        { n: 145, ch: 12, q: "Les petites annonces de la fratrie",
+          reponse: ["Recherche pull gris", "prêté en 2007. Récompense :", "ma reconnaissance", "éternelle."] },
+        { n: 53, ch: 5, q: "Le dossier des affaires non élucidées",
+          reponse: ["Le vase du salon.", "Version officielle : le chat.", "La vérité : un match de", "hand dans le couloir."] },
+        { n: 31, ch: 3, q: "Le premier baiser : où, quand, avec qui… et ta note sur 10",
+          reponse: ["Colonie de vacances, 1999.", "Il s'appelait Kevin.", "Note : 4/10, avec", "appareil dentaire."] }
+      ]
+    },
+
+    {
+      id: "belle-mere",
+      pour: "ta belle-mère",
+      titre: "Destination Belle-Maman",
+      sousTitre: "Ses histoires, ses coutumes, ses recettes et l'enfance de celui ou celle que j'aime : le guide de voyage à remplir ensemble",
+      auteur: "Adèle Mercier",
+      nouveaute: true,
+      vitrine: 1,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
+
+      lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
+      lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
+      prix: "",              // facultatif, ex. "11,99 €"
+      couverture: "bellemere-couverture.jpg", // image fournie : à placer à côté de ce fichier
+
+      motChapitre: "Étape",  // ici, les chapitres sont les étapes d'un guide de voyage
+      motDuLibraire: "Elle a connu ton amour avant toi. Elle a les photos.",
+      description: "Elle t'a ouvert sa porte, sa table et ses albums. Ce livre se remplit comme un guide de voyage dont elle est la guide : elle raconte son pays, ses coutumes, ses recettes et l'enfance de celui ou celle que tu aimes. Tu es le voyageur ; l'enfant du pays a un droit de réponse. Au bout du voyage, un passeport tamponné et un droit de séjour à vie.",
+      points: [
+        "154 questions et activités en 11 étapes, de son enfance à ses conseils pour la route",
+        "L'enfant du pays raconté par le seul témoin qui a tout vu, avec un droit de réponse",
+        "« C'est pas comme chez ma mère » : enfin les vraies recettes, et le secret qu'on ne note jamais",
+        "4 cartes postales, la carte du pays, « Tu ou vous ? », un passeport à tamponner et un droit de séjour à vie"
+      ],
+      caracteristiques: ["116 pages", "15,2 × 22,9 cm", "Papier blanc", "Lignes espacées de 9 mm", "Couverture mate"],
+
+      occasions: ["meres", "noel"],
+
+      couleurs: { fond: "#0E3D44", titre: "#CF5F3B", texte: "#F6E7CB" },
+      sceau: "Histoires · Recettes · Coutumes",
+      pastille: "154 questions",
+
+      sommaire: [
+        ["Aux origines : l'histoire du pays", 11],
+        ["Avant d'être maman", 19],
+        ["La dynastie : l'histoire de cœur fondatrice", 27],
+        ["L'enfant du pays : les premières années", 35],
+        ["L'enfant du pays : l'âge ingrat", 43],
+        ["Premier contact : le jour où je suis arrivé(e)", 51],
+        ["Us et coutumes : le savoir-vivre local", 59],
+        ["Gastronomie locale", 67],
+        ["Sites incontournables", 75],
+        ["Hors des sentiers battus", 83],
+        ["Le mot de la guide", 91],
+        ["Carnet de voyage : les pages à garder", 99]
+      ],
+
+      extraits: [
+        { n: 4,   ch: 1,  q: "Ton prénom : qui l'a choisi, pourquoi, et l'aimais-tu quand tu étais petite ?" },
+        { n: 9,   ch: 1,  q: "La bêtise d'enfance que tu n'as jamais avouée. Il y a prescription, et l'enfant du pays a le droit de savoir de qui il tient." },
+        { n: 19,  ch: 2,  q: "La plus grande folie de tes vingt ans." },
+        { n: 21,  ch: 2,  q: "Ce qu'on te disait « pas pour les filles »… et que tu as fait quand même." },
+        { n: 29,  ch: 3,  q: "Ta première impression. La version officielle, puis la vraie." },
+        { n: 32,  ch: 3,  q: "Ta première visite dans ta propre belle-famille : le repas, la gaffe, la belle-mère. (Ça peut servir.)" },
+        { n: 41,  ch: 4,  q: "Les prénoms qu'il ou elle a failli porter (et qui a gagné le débat)." },
+        { n: 44,  ch: 4,  q: "Ses mots d'enfant : les phrases que la famille répète encore." },
+        { n: 47,  ch: 4,  q: "La photo de l'enfant du pays que tu sortirais au mariage (ou que tu as sortie)." },
+        { n: 53,  ch: 5,  q: "Sa période la plus… discutable : le look, la coiffure, la musique à fond." },
+        { n: 58,  ch: 5,  q: "Les visiteurs précédents : avant moi, y a-t-il eu d'autres prétendants ? Réponse facultative et diplomatique." },
+        { n: 67,  ch: 6,  q: "Ta première impression de moi. Sois honnête : c'est un guide de voyage, pas un discours de mariage." },
+        { n: 69,  ch: 6,  q: "La gaffe du premier jour (il y en a toujours une). Ta version, puis la mienne." },
+        { n: 74,  ch: 6,  q: "Tu ou vous ? Comment on se parle aujourd'hui, et ce qu'on décide à partir de maintenant." },
+        { n: 81,  ch: 7,  q: "Le plan de table : dessine qui s'assoit où, et entoure la place que personne n'ose prendre." },
+        { n: 88,  ch: 7,  q: "Le choc culturel, chez toi, chez moi : le repas du dimanche, l'heure de l'apéritif, le sapin, les cadeaux." },
+        { n: 93,  ch: 8,  q: "La recette que l'enfant du pays réclame. Enfin la vraie, avec le secret qu'on ne note jamais." },
+        { n: 95,  ch: 8,  q: "Le plat qu'il ou elle détestait, et ton astuce pour le lui faire manger." },
+        { n: 98,  ch: 8,  q: "Le plat raté légendaire : la date, les dégâts, ce qu'on a mangé à la place." },
+        { n: 112, ch: 9,  q: "Le guide de la guide : ta boulangerie, ta balade, ta vue, ton marché, le secret du coin." },
+        { n: 120, ch: 10, q: "Être belle-mère, de ton côté : ce qu'on ne voit pas, ce qui est doux, ce qui est difficile." },
+        { n: 129, ch: 11, q: "Tes conseils pour un couple qui dure." },
+        { n: 133, ch: 11, q: "Le rôle que tu veux jouer dans nos vies, et celui que tu ne veux surtout pas jouer." },
+        { n: 142, ch: 12, q: "Carte postale n° 3 : au voyageur, le jour de notre rencontre." }
+      ],
+
+      pageExemple: [
+        { n: 95, ch: 8, q: "Le plat qu'il ou elle détestait, et ton astuce",
+          reponse: ["Les endives ! Je les cachais", "dans le gratin. Il n'a", "jamais rien remarqué.", "(Droit de réponse : faux !)"] },
+        { n: 47, ch: 4, q: "La photo de l'enfant du pays que tu sortirais au mariage",
+          reponse: ["Lui, 6 ans, cape de", "super-héros et bottes", "de pluie. Il refusait", "de les enlever pour dormir."] },
+        { n: 74, ch: 6, q: "Tu ou vous ?",
+          reponse: ["Vous pendant huit ans.", "Tu depuis le jour du", "gratin raté. Signé", "par les deux parties !"] }
+      ]
+    },
+    {
       id: "maman",
       pour: "Maman",
       titre: "Maman, raconte-moi ton histoire",
@@ -150,10 +553,10 @@ window.SITE = {
       auteur: "Adèle Mercier",
       nouveaute: false,
 
-      lienAmazon: "https://www.amazon.fr/dp/B0HKYX1D9H",        // <- collez ici le lien Amazon (version brochée)
+      lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
       lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
-      prix: "11,50 €",              // facultatif, ex. "11,99 €"
-      couverture: "https://m.media-amazon.com/images/I/51zo92hcHML._SY466_.jpg",        // conseillé, ex. "maman-couverture.png"
+      prix: "",              // facultatif, ex. "11,99 €"
+      couverture: "",        // conseillé, ex. "maman-couverture.png"
 
       motDuLibraire: "",     // À COMPLÉTER : une phrase d'accroche, comme pour Papi
       description: "Son enfance, sa jeunesse, ses amours, ses premières années de maman… Le livre à remplir pour que Maman raconte sa vie à son rythme, et que toute la famille garde son histoire.", // à adapter
@@ -173,7 +576,6 @@ window.SITE = {
   ]
 };
 </script>
-
 <style>
 /* Concept : la devanture d'une petite librairie parisienne.
    Enseigne vert sapin à lettres dorées, vitrine claire où un livre se remplit
@@ -768,8 +1170,6 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
 @font-face{font-family:"Poppins";src:url(data:font/woff;base64,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) format("woff");font-weight:500 600;font-style:normal;font-display:swap}
 @font-face{font-family:"Nothing You Could Do";src:url(data:font/woff;base64,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) format("woff");font-weight:400;font-style:normal;font-display:swap}
 </style>
-</head>
-<body>
 <script>if(!matchMedia('(prefers-reduced-motion: reduce)').matches)document.documentElement.classList.add('intro')</script>
 <a class="skip" href="#livres">Aller aux livres</a>
 
@@ -848,10 +1248,10 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
   <div class="ribbon" aria-label="Les occasions d’offrir">
     <div class="ribbon__track">
       <ul class="ribbon__list">
-        <li>Fête des mères</li><li>Fête des grands-pères</li><li>Noël</li><li>Anniversaire</li><li>Fête des pères</li><li>Départ à la retraite</li><li>Naissance d’un petit-enfant</li>
+        <li>Fête des mères</li><li>Un dimanche chez Belle-Maman</li><li>Fête des grands-pères</li><li>Noël</li><li>Journée des frères et sœurs</li><li>Fête des grands-mères</li><li>Anniversaire</li><li>Fête des pères</li><li>Mariage</li><li>Départ à la retraite</li><li>Naissance d’un enfant</li>
       </ul>
       <ul class="ribbon__list" aria-hidden="true">
-        <li>Fête des mères</li><li>Fête des grands-pères</li><li>Noël</li><li>Anniversaire</li><li>Fête des pères</li><li>Départ à la retraite</li><li>Naissance d’un petit-enfant</li>
+        <li>Fête des mères</li><li>Un dimanche chez Belle-Maman</li><li>Fête des grands-pères</li><li>Noël</li><li>Journée des frères et sœurs</li><li>Fête des grands-mères</li><li>Anniversaire</li><li>Fête des pères</li><li>Mariage</li><li>Départ à la retraite</li><li>Naissance d’un enfant</li>
       </ul>
     </div>
   </div>
@@ -952,7 +1352,7 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
       <div class="dates-list-wrap" data-reveal data-reveal-delay="120">
         <h3 class="dates-list__title">Les fêtes des douze prochains mois</h3>
         <ol class="dates-list" id="dates-list"></ol>
-        <p class="dates-always">Et toute l’année&nbsp;: un anniversaire, un départ à la retraite, la naissance d’un petit-enfant.</p>
+        <p class="dates-always">Et toute l’année&nbsp;: un anniversaire, un mariage, un départ à la retraite, la naissance d’un enfant ou d’un petit-enfant.</p>
       </div>
     </div>
   </section>
@@ -969,7 +1369,11 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
       <div class="faq-list" data-reveal data-reveal-delay="120">
         <details class="faq-item">
           <summary>Faut-il aimer écrire pour remplir ces livres&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
-          <div class="faq-item__body"><p>Non. Chaque question se remplit à son rythme, en quelques mots ou sur une page entière. «&nbsp;Papi, à toi la parole&nbsp;!&nbsp;» mêle questions ouvertes et formats rapides&nbsp;: cases à cocher, listes, notes sur 10. Et si écrire le fatigue, un proche peut poser les questions à voix haute et noter ses réponses.</p></div>
+          <div class="faq-item__body"><p>Non. Chaque question se remplit à son rythme, en quelques mots ou sur une page entière. Les livres mêlent questions ouvertes et formats rapides&nbsp;: cases à cocher, listes, notes, jeux. Et on peut aussi les remplir à deux&nbsp;: «&nbsp;Papa, face&nbsp;B&nbsp;» prévoit un mode dictée, et sa piste «&nbsp;Ta version des faits&nbsp;» se joue avec ses enfants. «&nbsp;Frérot, mode coop&nbsp;» va plus loin&nbsp;: celui qui offre écrit ses pronostics avant de l’offrir, puis on compte les points. «&nbsp;Sœurette, le numéro spécial&nbsp;» se remplit comme un magazine&nbsp;: celui ou celle qui offre écrit l’édito et quelques questions, la sœur répond, et le grand test se fait à deux. «&nbsp;Destination Belle-Maman&nbsp;» se remplit à trois&nbsp;: la belle-mère raconte, celui ou celle qui l’offre écrit ses notes de voyage, et son enfant a un droit de réponse.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>Quel livre choisir&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
+          <div class="faq-item__body"><p>Chacun a son caractère. «&nbsp;Papi, à toi la parole&nbsp;!&nbsp;» fait parler les grands-pères pudiques et garde leurs astuces. «&nbsp;Avant d’être Mamie&nbsp;» révèle la jeune femme qu’était votre grand-mère, avec ses recettes. «&nbsp;Papa, face&nbsp;B&nbsp;» dévoile les coulisses de votre père et se remplit en partie à deux. «&nbsp;Frérot, mode coop&nbsp;» se joue entre frères et sœurs adultes&nbsp;: pronostics, défis, vieux comptes à régler, et un niveau sans blague. «&nbsp;Sœurette, le numéro spécial&nbsp;» fait de votre sœur la star d’un magazine&nbsp;: interview exclusive, tests aux résultats tête en bas, potins et pages scellées. «&nbsp;Destination Belle-Maman&nbsp;» s’offre à une belle-mère, par un gendre ou une belle-fille&nbsp;: un guide de voyage où elle raconte son pays, ses recettes et l’enfance de celui ou celle que vous aimez. «&nbsp;Maman, raconte-moi ton histoire&nbsp;» déroule la vie de votre mère, à son rythme.</p></div>
         </details>
         <details class="faq-item">
           <summary>Comment commander&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
@@ -981,7 +1385,7 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
         </details>
         <details class="faq-item">
           <summary>Quel est le format des livres&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
-          <div class="faq-item__body"><p>15,2 × 22,9 cm, un format proche d’un grand cahier&nbsp;: assez de place pour écrire, assez léger pour l’emporter. «&nbsp;Papi, à toi la parole&nbsp;!&nbsp;» compte 116 pages sur papier blanc, avec des lignes espacées de 9 mm.</p></div>
+          <div class="faq-item__body"><p>15,2 × 22,9 cm, un format proche d’un grand cahier&nbsp;: assez de place pour écrire, assez léger pour l’emporter. «&nbsp;Papi, à toi la parole&nbsp;!&nbsp;», «&nbsp;Avant d’être Mamie&nbsp;», «&nbsp;Papa, face&nbsp;B&nbsp;», «&nbsp;Frérot, mode coop&nbsp;», «&nbsp;Sœurette, le numéro spécial&nbsp;» et «&nbsp;Destination Belle-Maman&nbsp;» comptent 116 pages sur papier blanc, avec des lignes d’écriture espacées de 9&nbsp;mm.</p></div>
         </details>
         <details class="faq-item">
           <summary>Dans quel ordre répondre aux questions&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
@@ -989,7 +1393,7 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
         </details>
         <details class="faq-item">
           <summary>Peut-on y ajouter des photos&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
-          <div class="faq-item__body"><p>Oui. «&nbsp;Papi, à toi la parole&nbsp;!&nbsp;» prévoit 9 cadres photo et des pages libres pour coller, dessiner ou raconter ce qu’on a oublié.</p></div>
+          <div class="faq-item__body"><p>Oui. Chaque livre prévoit des cadres photo (à chaque chapitre dans «&nbsp;Avant d’être Mamie&nbsp;», neuf dans «&nbsp;Papi, à toi la parole&nbsp;!&nbsp;», des tirages «&nbsp;face A, face B&nbsp;» dans «&nbsp;Papa, face&nbsp;B&nbsp;») et des pages pour coller, dessiner ou raconter ce qu’on a oublié.</p></div>
         </details>
         <details class="faq-item">
           <summary>Comment garder une copie pour toute la famille&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
@@ -1117,6 +1521,7 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
       sousTitre: String(b.sousTitre ?? "").trim(),
       auteur: String(b.auteur ?? "").trim(),
       nouveaute: !!b.nouveaute,
+      vitrine: Number(b.vitrine) > 0 ? Number(b.vitrine) : 0,
       lien: normUrl(b.lienAmazon),
       lienRelie: normUrl(b.lienAmazonRelie),
       prix: String(b.prix ?? "").trim(),
@@ -1131,6 +1536,7 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
       texteC: safeColor(col.texte, "#F3EBDD"),
       sceau: String(b.sceau ?? "").trim(),
       pastille: String(b.pastille ?? "").trim(),
+      motChap: String(b.motChapitre ?? "").trim() || "Chapitre",
       sommaire: list(b.sommaire),
       extraits: list(b.extraits).filter((x) => x.q),
       exemples: list(b.pageExemple).filter((x) => x.q && Array.isArray(x.reponse)),
@@ -1145,7 +1551,7 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
   const chapLabel = (b, ch) => {
     if (!ch) return "";
     const n = chapName(b, ch);
-    return "Chapitre " + ch + (n ? " · " + n : "");
+    return b.motChap + " " + ch + (n ? " · " + n : "");
   };
 
   /* ---------- Icônes et couvertures ---------- */
@@ -1200,7 +1606,7 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
         return `<li><span class="toc__n">${k + 1}</span><span class="toc__name">${T(name)}</span>${p ? `<span class="toc__dots" aria-hidden="true"></span><span class="toc__p">p.${NB}${esc(p)}</span>` : ""}</li>`;
       })
       .join("");
-    return `<details class="toc"><summary>Voir le sommaire (${b.sommaire.length} chapitres)${I.chevron}</summary><div class="toc__body"><ol class="toc__list">${items}</ol></div></details>`;
+    return `<details class="toc"><summary>Voir le sommaire (${b.sommaire.length} ${b.motChap.toLowerCase()}s)${I.chevron}</summary><div class="toc__body"><ol class="toc__list">${items}</ol></div></details>`;
   };
   const rowHTML = (b, i) => `
     <article class="book-row${i % 2 ? " book-row--flip" : ""}" id="livre-${b.id}" style="${varsOf(b)}" aria-labelledby="t-${b.id}">
@@ -1228,7 +1634,9 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
     const dest = books.filter((b) => b.pour).map((b) => "à " + b.pour);
     $("[data-destinataires]").textContent = dest.length ? dest.join(", ") : "à ceux que vous aimez";
 
-    $("#scene-books").innerHTML = books.slice(0, 3).map((b) => bookHTML(b, false)).join("");
+    const vitrine = books.filter((b) => b.vitrine).sort((x, y) => x.vitrine - y.vitrine);
+    const sceneBooks = [...vitrine, ...books.filter((b) => !b.vitrine)].slice(0, 3);
+    $("#scene-books").innerHTML = sceneBooks.map((b) => bookHTML(b, false)).join("");
     $("#books-list").innerHTML = books.map(rowHTML).join("");
     $("#final-shelf").innerHTML = books
       .map(
@@ -1517,6 +1925,7 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
     meres: { nom: "Fête des mères", date: feteDesMeres },
     peres: { nom: "Fête des pères", date: (y) => nthSunday(y, 5, 3) },
     "grands-peres": { nom: "Fête des grands-pères", date: (y) => nthSunday(y, 9, 1) },
+    "freres-soeurs": { nom: "Journée des frères et sœurs", date: (y) => new Date(y, 3, 10) },
     noel: { nom: "Noël", date: (y) => new Date(y, 11, 25) },
   };
   window.__fetes = { easter, feteDesMeres, nthSunday, OCC }; // utile pour vérifier les dates
@@ -1753,5 +2162,5 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
   } catch (e) {}
 })();
 </script>
-</body>
-</html>
+
+</body></html>
