@@ -1,4 +1,5 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<!doctype html><html lang="fr"><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+
 <title>Le Petit Libraire</title>
 <script>
 /* ==========================================================================
@@ -24,7 +25,7 @@
    4. OPTION « motChapitre »
       Remplace le mot « Chapitre » dans le sommaire et les extraits
       (le livre Papa utilise "Piste", Frérot "Niveau", Sœurette "Rubrique",
-      Belle-Maman "Étape").
+      Belle-Maman "Étape", Beau-Papa "Scène", Maman "Objet").
 
    5. OPTION « vitrine »
       Choisit les livres de la vitrine 3D en haut du site (1 = au premier
@@ -54,9 +55,9 @@ window.SITE = {
       nouveaute: true,
 
       lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
-      lienAmazonRelie: "https://www.amazon.fr/gp/product/B0HLTBBCFD",   // <- facultatif : lien de la version reliée
-      prix: "31,64 €",              // facultatif, ex. "11,99 €"
-      couverture: "couverture_1re_1800x2700.png",        // facultatif, ex. "papi-couverture.png"
+      lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
+      prix: "",              // facultatif, ex. "11,99 €"
+      couverture: "",        // facultatif, ex. "papi-couverture.png"
 
       motDuLibraire: "Le livre qui fait parler les grands-pères pudiques.",
       description: "Son premier salaire, sa rencontre avec Mamie, la recette qu'on réclame à chaque repas, le jargon de son métier, les voitures de sa vie… Les questions partent du concret pour faire venir, tout naturellement, les souvenirs et les confidences.",
@@ -144,9 +145,9 @@ window.SITE = {
       nouveaute: false,
 
       lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
-      lienAmazonRelie: "https://www.amazon.fr/gp/product/B0HLTP4S33",   // <- facultatif : lien de la version reliée
-      prix: "31,64 €",              // facultatif, ex. "11,99 €"
-      couverture: "Avant_d_etre_Mamie_1re_de_couverture_1800x2700.png",        // conseillé, ex. "mamie-couverture.png" (1re de couverture 1800 × 2700 déjà fournie)
+      lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
+      prix: "",              // facultatif, ex. "11,99 €"
+      couverture: "",        // conseillé, ex. "mamie-couverture.png" (1re de couverture 1800 × 2700 déjà fournie)
       vitrine: 0,            // place dans la vitrine 3D
 
       motDuLibraire: "Le livre qui révèle la femme derrière la grand-mère.",
@@ -224,7 +225,7 @@ window.SITE = {
 
       lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
       lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
-      prix: "31,63 €",              // facultatif, ex. "11,99 €"
+      prix: "",              // facultatif, ex. "11,99 €"
       couverture: "papa-couverture.jpg", // image fournie : à placer à côté de ce fichier
       vitrine: 0,            // place dans la vitrine 3D
 
@@ -304,11 +305,11 @@ window.SITE = {
       sousTitre: "Notre enfance en niveaux, nos vieux comptes à régler et tout ce que je ne sais pas encore de toi : le livre à remplir à deux",
       auteur: "Adèle Mercier",
       nouveaute: true,
-      vitrine: 3,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
+      vitrine: 0,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
 
       lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
       lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
-      prix: "31,63 €",              // facultatif, ex. "11,99 €"
+      prix: "",              // facultatif, ex. "11,99 €"
       couverture: "frere-couverture.jpg", // image fournie : à placer à côté de ce fichier
 
       motChapitre: "Niveau", // ici, les chapitres sont des niveaux de jeu vidéo
@@ -387,11 +388,11 @@ window.SITE = {
       sousTitre: "Interview exclusive, tests, potins et confidences : le magazine de sa vie, à remplir à deux",
       auteur: "Adèle Mercier",
       nouveaute: true,
-      vitrine: 2,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
+      vitrine: 0,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
 
       lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
       lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
-      prix: "31,63 €",              // facultatif, ex. "11,99 €"
+      prix: "",              // facultatif, ex. "11,99 €"
       couverture: "soeur-couverture.jpg", // image fournie : à placer à côté de ce fichier
 
       motChapitre: "Rubrique", // ici, les chapitres sont des rubriques de magazine
@@ -470,11 +471,11 @@ window.SITE = {
       sousTitre: "Ses histoires, ses coutumes, ses recettes et l'enfance de celui ou celle que j'aime : le guide de voyage à remplir ensemble",
       auteur: "Adèle Mercier",
       nouveaute: true,
-      vitrine: 1,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
+      vitrine: 3,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
 
       lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
       lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
-      prix: "31,63 €",              // facultatif, ex. "11,99 €"
+      prix: "",              // facultatif, ex. "11,99 €"
       couverture: "bellemere-couverture.jpg", // image fournie : à placer à côté de ce fichier
 
       motChapitre: "Étape",  // ici, les chapitres sont les étapes d'un guide de voyage
@@ -546,32 +547,169 @@ window.SITE = {
       ]
     },
     {
+      id: "beau-pere",
+      pour: "ton beau-père",
+      titre: "Beau-Papa, le rôle de sa vie",
+      sousTitre: "Le livre à remplir par ton beau-père : son histoire avant toi, votre film depuis",
+      auteur: "Adèle Mercier",
+      nouveaute: true,
+      vitrine: 2,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
+
+      lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
+      lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
+      prix: "",              // facultatif, ex. "11,99 €"
+      couverture: "beaupere-couverture.jpg", // image fournie : à placer à côté de ce fichier
+
+      motChapitre: "Scène",  // ici, les chapitres sont les scènes d'un film
+      motDuLibraire: "Il n'était pas obligé. Il est resté.",
+      description: "Il est arrivé en cours de film, sans script et sans rôle défini. Ce livre se remplit comme un film dont il est le héros : il raconte sa vie d'avant, sa rencontre avec ta mère, votre première scène, ses ratés et ce qu'il n'a jamais dit. Toi, tu es la réal' : tu écris le mot d'ouverture, tu poses tes questions et tu notes chaque scène. À la fin, un générique à remplir ensemble et un Prix du rôle de sa vie à lui décerner.",
+      points: [
+        "166 questions et activités en 11 scènes, du flash-back sur son enfance à « La suite »",
+        "« Prise 1, prise 2 » : ce qu'il a tenté d'abord pour te faire rire ou gagner ta confiance, puis ce qui a marché",
+        "Les pages cultes : « Comment je t'appelle », « Avant / après », ses manies, le taxi du samedi, et le jour du « T'es pas mon père ! »",
+        "Les bonus du DVD : scènes coupées, tickets, revue de presse, générique de fin et le Prix du rôle de sa vie"
+      ],
+      caracteristiques: ["116 pages", "15,2 × 22,9 cm", "Papier blanc", "Lignes espacées de 9 mm", "Couverture mate"],
+
+      occasions: ["peres", "noel"],
+
+      couleurs: { fond: "#1E1A1D", titre: "#EBB443", texte: "#F7EEDA" },
+      sceau: "Prises · Bêtisier · Générique",
+      pastille: "166 questions",
+
+      sommaire: [
+        ["Le héros avant le film", 11],
+        ["Les années solo", 19],
+        ["La rencontre", 27],
+        ["Première scène avec toi", 35],
+        ["Les répétitions", 43],
+        ["Cascades sans doublure", 51],
+        ["Le bêtisier", 59],
+        ["Les scènes cultes", 67],
+        ["Hors champ", 75],
+        ["Les coulisses", 83],
+        ["La suite", 91],
+        ["Les bonus du DVD", 99]
+      ],
+
+      extraits: [
+        { n: 7,   ch: 1,  q: "Ton prénom, ton surnom d'enfance, et qui avait le droit de l'utiliser." },
+        { n: 13,  ch: 1,  q: "Ta plus grosse bêtise, celle qui a fait du bruit dans tout le quartier." },
+        { n: 24,  ch: 2,  q: "Ta première voiture (ou ta première mob) : le modèle, la couleur, la panne légendaire." },
+        { n: 29,  ch: 2,  q: "Avant / après : ta vie avant d'être beau-père, et depuis. Le dimanche matin, le frigo, le canapé, le silence." },
+        { n: 33,  ch: 3,  q: "La première fois que tu as vu ma mère : où, quand, ce qu'elle portait." },
+        { n: 37,  ch: 3,  q: "Quand elle t'a parlé de moi (de nous) pour la première fois : ce qu'elle a dit, ce que tu as pensé." },
+        { n: 46,  ch: 4,  q: "Le jour où tu m'as rencontré(e) : ce qui s'est passé, dans l'ordre." },
+        { n: 48,  ch: 4,  q: "Ce que tu avais préparé (ou répété) pour faire bonne impression." },
+        { n: 53,  ch: 4,  q: "Prise 1, prise 2 : me faire rire. Ce que tu as tenté d'abord, puis ce qui a fini par marcher." },
+        { n: 61,  ch: 5,  q: "Comment je t'appelle : par ton prénom, « beau-papa », un surnom rien qu'à nous, « papa », ça dépend des jours." },
+        { n: 67,  ch: 5,  q: "Ce que tu n'as jamais voulu remplacer, et la place que tu as trouvée." },
+        { n: 68,  ch: 5,  q: "Le jour où j'ai dit « T'es pas mon père ! » : comment tu l'as pris, ce que tu as répondu." },
+        { n: 70,  ch: 5,  q: "Le conseil que tu donnerais à un homme qui devient beau-père demain." },
+        { n: 77,  ch: 6,  q: "Ton taxi : le record de distance, l'heure la plus tardive, la destination la plus improbable." },
+        { n: 78,  ch: 6,  q: "La bêtise de moi que tu as couverte (on peut le dire maintenant)." },
+        { n: 88,  ch: 7,  q: "Tes manies : tu baisses le chauffage en douce, tu parles au GPS, tu racontes la fin des films…" },
+        { n: 90,  ch: 7,  q: "Ton plus beau raté en cuisine." },
+        { n: 104, ch: 8,  q: "Le moment où tu t'es senti de la famille, pour de vrai." },
+        { n: 112, ch: 9,  q: "Ce qui a été le plus difficile dans ce rôle, et que personne n'a vu." },
+        { n: 118, ch: 9,  q: "Ce que tu ressens quand on te demande : « C'est ton enfant ? »" },
+        { n: 128, ch: 10, q: "Ta filmothèque idéale : cinq films à voir absolument avec toi, et pourquoi." },
+        { n: 135, ch: 10, q: "Le questionnaire de la loge : VO ou VF ? Pop-corn salé ou sucré ? Générique jusqu'au bout ?" },
+        { n: 150, ch: 12, q: "Les scènes coupées : cinq choses que tu n'as jamais dites." },
+        { n: 160, ch: 12, q: "Le générique de fin : Réalisation, Cantine, Chauffeur, Cascades… à remplir ensemble, comme au cinéma." }
+      ],
+
+      pageExemple: [
+        { n: 53, ch: 4, q: "Prise 1, prise 2 : me faire rire",
+          reponse: ["Prise 1 : les grimaces.", "Bide total. Prise 2 : la", "chanson du lave-vaisselle,", "chantée faux. Ça dure encore."] },
+        { n: 68, ch: 5, q: "Le jour où j'ai dit « T'es pas mon père ! »",
+          reponse: ["Tu avais 11 ans. J'ai dit :", "« Non. Mais je suis là. »", "Le lendemain, tu m'as", "demandé de l'aide en maths."] },
+        { n: 160, ch: 12, q: "Le générique de fin",
+          reponse: ["Réalisation : moi.", "Cantine : lui (les crêpes).", "Chauffeur : lui, 24 h/24.", "Cascades : le chien."] }
+      ]
+    },
+
+    {
       id: "maman",
       pour: "Maman",
-      titre: "Maman, raconte-moi ton histoire",
-      sousTitre: "",         // À COMPLÉTER : le sous-titre exact de la fiche Amazon
+      titre: "Maman, vide ton sac !",
+      sousTitre: "Ses souvenirs, ses secrets, ses remèdes et tout ce qu'elle a porté : le livre à remplir qu'on a enfin le droit de fouiller",
       auteur: "Adèle Mercier",
-      nouveaute: false,
+      nouveaute: true,
+      vitrine: 1,            // facultatif : place dans la vitrine 3D en haut du site (1 = au premier plan)
 
-      lienAmazon: "https://www.amazon.fr/dp/B0HKYX1D9H",        // <- collez ici le lien Amazon (version brochée)
+      lienAmazon: "",        // <- collez ici le lien Amazon (version brochée)
       lienAmazonRelie: "",   // <- facultatif : lien de la version reliée
-      prix: "11,50 €",              // facultatif, ex. "11,99 €"
-      couverture: "maman-couverture.pdf",        // conseillé, ex. "maman-couverture.png"
+      prix: "",              // facultatif, ex. "11,99 €"
+      couverture: "maman-couverture.jpg", // image fournie : à placer à côté de ce fichier
 
-      motDuLibraire: "",     // À COMPLÉTER : une phrase d'accroche, comme pour Papi
-      description: "Son enfance, sa jeunesse, ses amours, ses premières années de maman… Le livre à remplir pour que Maman raconte sa vie à son rythme, et que toute la famille garde son histoire.", // à adapter
-      points: [],            // À COMPLÉTER, ex. "120 questions en 10 chapitres"
-      caracteristiques: ["15,2 × 22,9 cm"], // À COMPLÉTER : nombre de pages, papier…
+      motChapitre: "Objet",  // ici, les chapitres sont les objets qu'elle sort de son sac
+      motDuLibraire: "Toute ton enfance, interdiction de fouiller dans son sac. Aujourd'hui, c'est elle qui le vide.",
+      description: "Elle a soigné tes genoux, signé tes mots d'excuse, porté tes affaires, tes chagrins et quelques paquets de gâteaux entamés. Ce livre se remplit comme on vide un sac à main : elle en sort onze objets, un par un, à son rythme, et chacun ouvre un chapitre de sa vie. La carte d'identité raconte la petite fille, le rouge à lèvres la jeune femme, la photo pliée en quatre le jour où elle est devenue ta mère… jusqu'à la poche intérieure, pour ce qu'elle n'a jamais dit.",
+      points: [
+        "144 questions et activités en 11 objets, de sa carte d'identité à la liste de ce qu'elle veut encore faire",
+        "Les tickets de caisse : l'inventaire de son sac, les prix de ses vingt ans, la facture qu'elle ne t'enverra jamais",
+        "Les ordonnances du Dr Maman, l'offre d'emploi « Mère » et 10 phrases de mère à cocher sans honte",
+        "« De mère en mère », la poche intérieure sans blague et 8 petits mots recto verso à découper"
+      ],
+      caracteristiques: ["116 pages", "15,2 × 22,9 cm", "Papier blanc", "Lignes espacées de 9 mm", "Couverture mate"],
 
       occasions: ["meres", "noel"],
 
-      couleurs: { fond: "#5A2A41", titre: "#F0C2BA", texte: "#F8EEE9" },
-      sceau: "",
-      pastille: "",
+      couleurs: { fond: "#3A1238", titre: "#9AA6E6", texte: "#FBF3E2" },
+      sceau: "Souvenirs · Remèdes · Secrets",
+      pastille: "144 questions",
 
-      sommaire: [],          // même format que pour Papi
-      extraits: [],          // ajoutez quelques questions du livre : elles apparaîtront dans « Extraits »
-      pageExemple: []
+      sommaire: [
+        ["La carte d'identité : avant d'être ma mère", 9],
+        ["Le rouge à lèvres : la jeune femme", 17],
+        ["Le trousseau de clés : toutes les portes de ta vie", 25],
+        ["L'agenda : tes journées bien remplies", 33],
+        ["Le vieux billet de cinéma : les histoires de cœur", 41],
+        ["La photo pliée en quatre : le jour où tu es devenue ma mère", 49],
+        ["Le paquet de gâteaux entamé : mon enfance, vue de ton côté", 57],
+        ["La trousse de secours : les remèdes de Maman", 65],
+        ["Le téléphone : Maman, en ligne", 73],
+        ["La poche intérieure : ce que tu ne m'as jamais dit", 81],
+        ["La liste : et maintenant, Maman ?", 89],
+        ["Le fond du sac : les pages à garder", 97]
+      ],
+
+      extraits: [
+        { n: 4,   ch: 1,  q: "Ton prénom : qui l'a choisi, ce qu'il veut dire, et celui que tu aurais préféré porter." },
+        { n: 12,  ch: 1,  q: "Ce qu'il y avait dans le sac de ta mère quand tu étais petite… et que tu n'avais pas le droit de toucher." },
+        { n: 17,  ch: 2,  q: "Ton premier rouge à lèvres, ou ton premier maquillage : la couleur, l'occasion, la tête qu'on a faite à la maison." },
+        { n: 20,  ch: 2,  q: "Le ticket de tes vingt ans : une baguette, une place de cinéma, un mois de loyer, ton premier salaire… les prix de ta jeunesse, de mémoire." },
+        { n: 24,  ch: 2,  q: "Ce qu'on t'interdisait « parce que tu es une fille »… et que tu as fait quand même." },
+        { n: 31,  ch: 3,  q: "La petite clé mystère du trousseau : à ton avis, qu'est-ce qu'elle ouvre ?" },
+        { n: 40,  ch: 4,  q: "La semaine type de Maman, quand j'étais petit(e) : tout ce qui tenait dans l'agenda, heure par heure." },
+        { n: 41,  ch: 4,  q: "L'offre d'emploi « Mère » : missions, horaires, compétences exigées, inconvénients (soyons honnêtes), salaire." },
+        { n: 42,  ch: 4,  q: "La liste invisible : tout ce que tu faisais et que personne ne voyait." },
+        { n: 53,  ch: 5,  q: "L'affiche du film de ta vie amoureuse : le titre, le genre, la réplique culte, la scène coupée au montage." },
+        { n: 58,  ch: 5,  q: "Ce que tu as pensé la première fois que je t'ai présenté quelqu'un. La vraie réponse, pas celle du repas." },
+        { n: 60,  ch: 6,  q: "Le jour où tu as su que j'allais arriver : où tu étais, à qui tu l'as dit en premier." },
+        { n: 67,  ch: 6,  q: "Ce que personne ne t'avait dit sur le fait de devenir mère." },
+        { n: 73,  ch: 7,  q: "Les bêtises dont tu étais au courant… et pour lesquelles tu n'as jamais rien dit." },
+        { n: 75,  ch: 7,  q: "Le menu de mon enfance : le goûter de la sortie d'école, le plat que je refusais (et ton astuce), le dîner des soirs de flemme." },
+        { n: 83,  ch: 8,  q: "L'ordonnance du Dr Maman : pour un genou écorché, une grosse fièvre, un cauchemar à 3 h du matin…" },
+        { n: 93,  ch: 8,  q: "Le bisou magique : comment il marche, et jusqu'à quel âge il a marché sur moi." },
+        { n: 98,  ch: 9,  q: "Tes messages les plus envoyés. Le premier, je le connais par cœur : « Tu es bien rentré(e) ? »" },
+        { n: 105, ch: 9,  q: "Ton répondeur idéal : écris le message d'accueil de Maman." },
+        { n: 106, ch: 10, q: "Ce que tu as porté pour nous, et que je n'ai jamais vu." },
+        { n: 116, ch: 10, q: "Ce que devenir mère t'a pris, et ce que ça t'a donné." },
+        { n: 119, ch: 11, q: "Ta liste « avant mes 100 ans », au dos d'un ticket : pain, lait, piles… et tout ce que tu veux encore faire." },
+        { n: 130, ch: 12, q: "La facture de Maman : nuits blanches, kilomètres de taxi Maman, cheveux blancs. Prix : offert. Total : inestimable." },
+        { n: 135, ch: 12, q: "Huit petits mots à écrire et à découper : pour un jour de pluie, pour quand je te manquerai, pour n'importe quel lundi." }
+      ],
+
+      pageExemple: [
+        { n: 83, ch: 8, q: "Ordonnance du Dr Maman : pour un genou écorché",
+          reponse: ["Un pansement à dinosaures,", "un bisou magique, et on", "souffle trois fois dessus.", "Posologie : à volonté."] },
+        { n: 41, ch: 4, q: "L'offre d'emploi « Mère »",
+          reponse: ["Horaires : 24 h sur 24.", "Compétence : retrouver une", "chaussette en 3 secondes.", "Salaire : un « je t'aime »."] },
+        { n: 73, ch: 7, q: "Les bêtises dont tu étais au courant… et pour lesquelles tu n'as jamais rien dit",
+          reponse: ["Les bonbons sous ton lit,", "le mot d'excuse imité,", "la mobylette de Julien…", "Je savais. Je savais tout."] }
+      ]
     }
   ]
 };
@@ -1248,10 +1386,10 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
   <div class="ribbon" aria-label="Les occasions d’offrir">
     <div class="ribbon__track">
       <ul class="ribbon__list">
-        <li>Fête des mères</li><li>Un dimanche chez Belle-Maman</li><li>Fête des grands-pères</li><li>Noël</li><li>Journée des frères et sœurs</li><li>Fête des grands-mères</li><li>Anniversaire</li><li>Fête des pères</li><li>Mariage</li><li>Départ à la retraite</li><li>Naissance d’un enfant</li>
+        <li>Fête des mères</li><li>Les 60 ans de Maman</li><li>Un dimanche chez Belle-Maman</li><li>Fête des grands-pères</li><li>Noël</li><li>Journée des frères et sœurs</li><li>Fête des grands-mères</li><li>Anniversaire</li><li>Fête des pères</li><li>Un merci à Beau-Papa</li><li>Mariage</li><li>Départ à la retraite</li><li>Naissance d’un enfant</li>
       </ul>
       <ul class="ribbon__list" aria-hidden="true">
-        <li>Fête des mères</li><li>Un dimanche chez Belle-Maman</li><li>Fête des grands-pères</li><li>Noël</li><li>Journée des frères et sœurs</li><li>Fête des grands-mères</li><li>Anniversaire</li><li>Fête des pères</li><li>Mariage</li><li>Départ à la retraite</li><li>Naissance d’un enfant</li>
+        <li>Fête des mères</li><li>Les 60 ans de Maman</li><li>Un dimanche chez Belle-Maman</li><li>Fête des grands-pères</li><li>Noël</li><li>Journée des frères et sœurs</li><li>Fête des grands-mères</li><li>Anniversaire</li><li>Fête des pères</li><li>Un merci à Beau-Papa</li><li>Mariage</li><li>Départ à la retraite</li><li>Naissance d’un enfant</li>
       </ul>
     </div>
   </div>
@@ -1369,11 +1507,11 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
       <div class="faq-list" data-reveal data-reveal-delay="120">
         <details class="faq-item">
           <summary>Faut-il aimer écrire pour remplir ces livres&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
-          <div class="faq-item__body"><p>Non. Chaque question se remplit à son rythme, en quelques mots ou sur une page entière. Les livres mêlent questions ouvertes et formats rapides&nbsp;: cases à cocher, listes, notes, jeux. Et on peut aussi les remplir à deux&nbsp;: «&nbsp;Papa, face&nbsp;B&nbsp;» prévoit un mode dictée, et sa piste «&nbsp;Ta version des faits&nbsp;» se joue avec ses enfants. «&nbsp;Frérot, mode coop&nbsp;» va plus loin&nbsp;: celui qui offre écrit ses pronostics avant de l’offrir, puis on compte les points. «&nbsp;Sœurette, le numéro spécial&nbsp;» se remplit comme un magazine&nbsp;: celui ou celle qui offre écrit l’édito et quelques questions, la sœur répond, et le grand test se fait à deux. «&nbsp;Destination Belle-Maman&nbsp;» se remplit à trois&nbsp;: la belle-mère raconte, celui ou celle qui l’offre écrit ses notes de voyage, et son enfant a un droit de réponse.</p></div>
+          <div class="faq-item__body"><p>Non. Chaque question se remplit à son rythme, en quelques mots ou sur une page entière. Les livres mêlent questions ouvertes et formats rapides&nbsp;: cases à cocher, listes, notes, jeux. Et on peut aussi les remplir à deux&nbsp;: «&nbsp;Papa, face&nbsp;B&nbsp;» prévoit un mode dictée, et sa piste «&nbsp;Ta version des faits&nbsp;» se joue avec ses enfants. «&nbsp;Frérot, mode coop&nbsp;» va plus loin&nbsp;: celui qui offre écrit ses pronostics avant de l’offrir, puis on compte les points. «&nbsp;Sœurette, le numéro spécial&nbsp;» se remplit comme un magazine&nbsp;: celui ou celle qui offre écrit l’édito et quelques questions, la sœur répond, et le grand test se fait à deux. «&nbsp;Destination Belle-Maman&nbsp;» se remplit à trois&nbsp;: la belle-mère raconte, celui ou celle qui l’offre écrit ses notes de voyage, et son enfant a un droit de réponse. «&nbsp;Beau-Papa, le rôle de sa vie&nbsp;» se remplit comme un film&nbsp;: le beau-père, héros du livre, répond&nbsp;; celui ou celle qui l’offre, la «&nbsp;réal’&nbsp;», écrit le mot d’ouverture, pose quelques questions et note chaque scène. «&nbsp;Maman, vide ton sac&nbsp;!&nbsp;» laisse quelques pages à celui ou celle qui l’offre (étiquettes blanches marquées d’un cœur), et ses phrases de mère se cochent en une seconde.</p></div>
         </details>
         <details class="faq-item">
           <summary>Quel livre choisir&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
-          <div class="faq-item__body"><p>Chacun a son caractère. «&nbsp;Papi, à toi la parole&nbsp;!&nbsp;» fait parler les grands-pères pudiques et garde leurs astuces. «&nbsp;Avant d’être Mamie&nbsp;» révèle la jeune femme qu’était votre grand-mère, avec ses recettes. «&nbsp;Papa, face&nbsp;B&nbsp;» dévoile les coulisses de votre père et se remplit en partie à deux. «&nbsp;Frérot, mode coop&nbsp;» se joue entre frères et sœurs adultes&nbsp;: pronostics, défis, vieux comptes à régler, et un niveau sans blague. «&nbsp;Sœurette, le numéro spécial&nbsp;» fait de votre sœur la star d’un magazine&nbsp;: interview exclusive, tests aux résultats tête en bas, potins et pages scellées. «&nbsp;Destination Belle-Maman&nbsp;» s’offre à une belle-mère, par un gendre ou une belle-fille&nbsp;: un guide de voyage où elle raconte son pays, ses recettes et l’enfance de celui ou celle que vous aimez. «&nbsp;Maman, raconte-moi ton histoire&nbsp;» déroule la vie de votre mère, à son rythme.</p></div>
+          <div class="faq-item__body"><p>Chacun a son caractère. «&nbsp;Papi, à toi la parole&nbsp;!&nbsp;» fait parler les grands-pères pudiques et garde leurs astuces. «&nbsp;Avant d’être Mamie&nbsp;» révèle la jeune femme qu’était votre grand-mère, avec ses recettes. «&nbsp;Papa, face&nbsp;B&nbsp;» dévoile les coulisses de votre père et se remplit en partie à deux. «&nbsp;Frérot, mode coop&nbsp;» se joue entre frères et sœurs adultes&nbsp;: pronostics, défis, vieux comptes à régler, et un niveau sans blague. «&nbsp;Sœurette, le numéro spécial&nbsp;» fait de votre sœur la star d’un magazine&nbsp;: interview exclusive, tests aux résultats tête en bas, potins et pages scellées. «&nbsp;Destination Belle-Maman&nbsp;» s’offre à une belle-mère, par un gendre ou une belle-fille&nbsp;: un guide de voyage où elle raconte son pays, ses recettes et l’enfance de celui ou celle que vous aimez. «&nbsp;Beau-Papa, le rôle de sa vie&nbsp;» s’offre au beau-père d’une famille recomposée, celui qui n’était pas obligé et qui est resté&nbsp;: il y raconte sa vie d’avant, votre première rencontre et ses «&nbsp;prise&nbsp;1, prise&nbsp;2&nbsp;», sans jamais être comparé à personne. «&nbsp;Maman, vide ton sac&nbsp;!&nbsp;» ouvre enfin le sac de votre mère&nbsp;: onze objets, onze chapitres de sa vie, ses remèdes, ses phrases de mère et ce qu’elle a porté sans rien dire, jusqu’à huit petits mots à découper.</p></div>
         </details>
         <details class="faq-item">
           <summary>Comment commander&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
@@ -1385,7 +1523,7 @@ h3 { font-size: clamp(1.45rem, 1.2rem + 1vw, 1.9rem); }
         </details>
         <details class="faq-item">
           <summary>Quel est le format des livres&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
-          <div class="faq-item__body"><p>15,2 × 22,9 cm, un format proche d’un grand cahier&nbsp;: assez de place pour écrire, assez léger pour l’emporter. «&nbsp;Papi, à toi la parole&nbsp;!&nbsp;», «&nbsp;Avant d’être Mamie&nbsp;», «&nbsp;Papa, face&nbsp;B&nbsp;», «&nbsp;Frérot, mode coop&nbsp;», «&nbsp;Sœurette, le numéro spécial&nbsp;» et «&nbsp;Destination Belle-Maman&nbsp;» comptent 116 pages sur papier blanc, avec des lignes d’écriture espacées de 9&nbsp;mm.</p></div>
+          <div class="faq-item__body"><p>15,2 × 22,9 cm, un format proche d’un grand cahier&nbsp;: assez de place pour écrire, assez léger pour l’emporter. «&nbsp;Papi, à toi la parole&nbsp;!&nbsp;», «&nbsp;Avant d’être Mamie&nbsp;», «&nbsp;Papa, face&nbsp;B&nbsp;», «&nbsp;Frérot, mode coop&nbsp;», «&nbsp;Sœurette, le numéro spécial&nbsp;», «&nbsp;Destination Belle-Maman&nbsp;», «&nbsp;Beau-Papa, le rôle de sa vie&nbsp;» et «&nbsp;Maman, vide ton sac&nbsp;!&nbsp;» comptent 116 pages sur papier blanc, avec des lignes d’écriture espacées de 9&nbsp;mm.</p></div>
         </details>
         <details class="faq-item">
           <summary>Dans quel ordre répondre aux questions&nbsp;?<span class="faq-item__icon" aria-hidden="true"></span></summary>
